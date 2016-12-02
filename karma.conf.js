@@ -1,5 +1,7 @@
 var webpackConfig = require('./webpack.config.js');
 
+delete webpackConfig.externals; // Ñapa se ve que en Ubuntu 16.04 no funciona bien.
+
 module.exports = function(config){
   config.set({
     browsers: ['Chrome'],
